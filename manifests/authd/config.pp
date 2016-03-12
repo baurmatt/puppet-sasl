@@ -45,7 +45,7 @@ class sasl::authd::config {
       $::sasl::params::saslauthd_ldap_conf_file => '',
       default                                   => "-O ${ldap_conf_file}",
     },
-    'rimap' => "-O ${::sasl::authd::imap_server}",
+    'rimap' => "${::sasl::authd::imap_server}",
     default => '',
   }
 
